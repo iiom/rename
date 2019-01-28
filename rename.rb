@@ -11,23 +11,3 @@ file_in_dir.each do |f|
   end
 end
 
-
-
-# basename
-# Если вы имеете дело с файлами, вы можете использовать basename
-# File.basename("/home/gumby/work/ruby.rb")   #=> "ruby.rb"
-# File.basename("/home/gumby/work/ruby.rb", ".rb") #=> "ruby"
-#
-# В противном случае, если это просто строка:
-# 'C:/EFI/Ulta/Filename.rb'.split('/').last.split('.').first
-#
-# File.basename(file, '.*')[0,3] обрезает имя файла до 3х символов
-#
-# extname
-# Returns the extension (the portion of file name in path after the period).
-# File.extname("test.rb")         #=> ".rb"
-# File.extname("a/b/d/test.rb")   #=> ".rb"
-# File.extname("test")            #=> ""
-# File.extname(".profile")        #=> ""
-#
-#
