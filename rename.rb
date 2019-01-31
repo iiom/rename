@@ -10,4 +10,3 @@ file_in_dir.each do |f|
     File.rename(File.basename(f), File.basename(f, ".*"))
   end
 end
-
